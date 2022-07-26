@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explosion">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:visibility="invisible"
+        android:background="@drawable/round_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/floatingActionButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:tint="@color/white"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
